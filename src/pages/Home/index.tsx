@@ -11,6 +11,9 @@ const Home = () => {
                         <h1 className={styles.mainTitle}>Comece a construir seus sonhos!</h1>
                         <h2 className={styles.secondaryTitle}>Uma Tarefa de cada vez!</h2>
                     </hgroup>
+                    <div className={styles.buttonArea}>
+                        <button>+ Criar Nova Tarefa</button>
+                    </div>
                     <main>
                         <Task />
                       

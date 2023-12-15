@@ -1,6 +1,7 @@
 import styles from './Task.module.scss';
 import { useState } from 'react';
 import gallery from './icons/gallery.png';
+import edit from './icons/edit.png';
 
 const Task = () => {
   const [checked, setChecked] = useState(false);
@@ -26,8 +27,9 @@ const Task = () => {
         </div>
       </div>
 
-      <div className={styles.imageArea}>
-            <img src={gallery} alt="" />
+      <div className={styles.actionsArea}>
+            <img src={edit} alt="imagem da tarefa" />
+            <img src={gallery} alt="imagem da tarefa" />
       </div>
     </section>
   );

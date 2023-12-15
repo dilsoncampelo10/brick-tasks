@@ -4,7 +4,7 @@ import upload from './icons/upload.png';
 interface ModalProps {
     id?: string,
     title: string,
-    handleButton: ()=>{}
+    handleButton: ()=>void
 }
 const Modal = ({ title,handleButton }: ModalProps) => {
 

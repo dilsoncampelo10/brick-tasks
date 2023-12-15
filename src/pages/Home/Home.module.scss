@@ -1,0 +1,24 @@
+.taskArea{
+    background-color: var(--content-color);
+    padding: 25px 10px;
+    .hgroup{
+        margin-bottom: 30px;
+    }
+    .mainTitle{
+        font-size: 3rem;
+        font-weight: 300;
+
+        &::before{
+            content: '';
+            background-color: var(--details-color);
+            display: block;
+            width: 30%;
+            height: 15px;
+        }
+    }
+    .secondaryTitle{
+        font-size: 2rem;
+        color: rgb(65, 59, 59);
+        font-weight: 300;
+    }
+}

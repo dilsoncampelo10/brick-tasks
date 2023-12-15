@@ -1,8 +1,15 @@
 import Layout from '../../components/layouts/Layout';
 import styles from './Home.module.scss';
 import Task from '../../components/utils/Task';
+import Modal from '../../components/utils/Modal';
+import { useState } from 'react';
 
 const Home = () => {
+
+    const [openModal, setOpenModal] = useState<Boolean>(false);
+    const handleButton = () => {
+        setOpenModal(!openModal);
+    }
     return (
         <>
             <Layout>
@@ -12,11 +19,15 @@ const Home = () => {
                         <h2 className={styles.secondaryTitle}>Uma Tarefa de cada vez!</h2>
                     </hgroup>
                     <div className={styles.buttonArea}>
-                        <button>+ Criar Nova Tarefa</button>
+                        <button onClick={handleButton}>+ Criar Nova Tarefa</button>
+
                     </div>
+                    {openModal &&
+                        <Modal title='Nova Tarefa' handleButton={() => {handleButton()}} />
+                    }
                     <main>
                         <Task />
-                      
+
                     </main>
                 </section>
             </Layout>

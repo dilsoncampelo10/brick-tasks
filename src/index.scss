@@ -2,9 +2,9 @@
 
 :root {
   --background-color: rgb(230, 218, 218);
-  ;
   --content-color: rgb(255, 249, 249);
   --details-color: #FF7B69;
+  --shadow-color: rgb(77, 75, 75);
 }
 
 * {
@@ -21,4 +21,21 @@ body {
 .container {
   max-width: 1280px;
   margin: auto;
+}
+
+button {
+  padding: 8px 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0;
+  background-color: var(--details-color);
+  color: var(--content-color);
+  box-shadow: 3px 3px 3px var(--shadow-color);
+  font-weight: 700;
+
+  &:hover {
+    transition: 0.5s;
+    background-color: var(--shadow-color);
+    color: var(--details-color);
+  }
 }

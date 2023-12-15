@@ -1,10 +1,10 @@
 import Navbar from "../Navbar";
 
-interface IProps {
+interface LayoutProps {
     children: React.ReactNode
 }
 
-const Layout = ({ children }: IProps) => {
+const Layout = ({ children }: LayoutProps) => {
     return (
         <>
             <header>

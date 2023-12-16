@@ -1,0 +1,45 @@
+.container {
+ 
+    max-width: 820px;
+    margin: auto;
+
+    .card {
+        margin-top: 20px;
+        background-color: var(--content-color);
+        padding: 20px;
+        min-height: 600px;
+        .cardHeader{
+            text-align: center;
+        }
+
+        .cardBody{
+
+            .inputBox{
+              
+                input{
+                    display: block;
+                    width: 100%;
+                    border: 1px solid #cecece;
+                    outline: 0;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin: 20px 0;
+                }
+                label{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .cardFooter{
+            margin-top: 40px;
+            a{
+                text-decoration: none;
+                color: rgb(21, 21, 85);
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
